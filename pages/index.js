@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Link from "next/link";
+import Link from 'data-prefetch-link'
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
 
         <p className="description">
           Check out this post:
-          <Link href="/post/[id]" as={'/post/1'}>
+          <Link prefetch withData href="/post/[id]" as={'/post/1'}>
             <a>First Post</a>
           </Link>
         </p>
